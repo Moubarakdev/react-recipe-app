@@ -15,7 +15,7 @@ export default function RecipeDetails() {
   const navigate = useNavigate();
 
   const handleGoBack = () => {
-    window.history.back().back();
+    window.history.back();
   };
 
   // function to extract the url id
