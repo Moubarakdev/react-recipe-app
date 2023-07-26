@@ -14,7 +14,12 @@ export default function Card({ recipe }) {
   return (
     <>
       <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 my-2 mx-2">
-        <a href="">
+        <a
+          href=""
+          onClick={() => {
+            handleRecipeId(parseInt(recipe?.idMeal));
+          }}
+        >
           <img className="rounded-t-lg " src={recipe?.strMealThumb} alt="" />
         </a>
         <div className="p-5">
